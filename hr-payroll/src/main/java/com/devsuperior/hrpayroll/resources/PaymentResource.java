@@ -25,7 +25,6 @@ public class PaymentResource {
         return ResponseEntity.ok(payment);
     }
 
-    @GetMapping(value = "/{workerId}/days/{days}")
     public ResponseEntity<Payment> getPaymentAlternative(Long workerId, int days) {
         Payment payment = new Payment("Brann", 400.0,days);
         return ResponseEntity.ok(payment);
